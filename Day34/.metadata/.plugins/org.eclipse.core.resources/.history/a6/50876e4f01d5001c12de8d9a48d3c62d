@@ -1,0 +1,13 @@
+package com.example.OneToManydemo;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class OneToManydemoApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(OneToManydemoApplication.class, args);
+	}
+
+}

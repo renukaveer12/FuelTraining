@@ -1,0 +1,21 @@
+package com.example.OneToManydemo;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+
+@Entity
+public class Items {
+	
+	@Id
+	private int item_id;
+	private String item_des;
+	private int item_cost;
+	
+	
+	@ManyToOne
+	@JoinColumn(name="cart_id")
+	private Cart cart_obj;
+
+}
