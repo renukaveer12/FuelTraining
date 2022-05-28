@@ -1,0 +1,15 @@
+<html lang="en" xmlns:th="https://www.thymleaf.org">
+<head>
+<title>signup result</title>
+</head>
+<body>
+<h>signup result</h1>
+<table border="1">
+<tr th:each="user: ${users}">
+	<td th: text="${user.id}"></td>
+	<td th: text="${user.username}"></td>
+	<td th: text="${user.email}"></td>
+</tr>
+</table>
+</body>
+</html>
